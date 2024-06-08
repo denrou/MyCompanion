@@ -9,4 +9,12 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="select_sport">Select a Sport</string>
+    <string name="badminton">Badminton</string>
+    <string name="basketball">Basketball</string>
+    <string name="climbing">Climbing</string>
+    <string name="hockey">Hockey</string>
+    <string name="trail">Trail</string>
+    <string name="running">Running</string>
+    <string name="biking">Biking</string>
 </resources>
