@@ -1,5 +1,6 @@
 package com.example.traininganalyst
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -19,6 +20,9 @@ class MainActivity : AppCompatActivity() {
         val sportLayout = view as LinearLayout
         selectedSport = sportLayout.tag.toString()
         Log.d("MainActivity", "Selected Sport: $selectedSport")
-        // You can use the selectedSport variable later in your code
+
+        // Start GoalActivity
+        val intent = Intent(this, GoalActivity::class.java)
+        startActivity(intent)
     }
 }
