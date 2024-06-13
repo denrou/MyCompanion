@@ -1,4 +1,4 @@
-package com.example.traininganalyst
+package com.example.mycompanion
 
 import org.junit.Test
 

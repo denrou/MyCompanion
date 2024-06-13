@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.traininganalyst'
+    namespace 'com.example.mycompanion'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.traininganalyst"
+        applicationId "com.example.mycompanion"
         minSdk 24
         targetSdk 34
         versionCode 1

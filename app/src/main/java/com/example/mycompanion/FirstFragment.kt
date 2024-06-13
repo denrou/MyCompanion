@@ -1,4 +1,4 @@
-package com.example.traininganalyst
+package com.example.mycompanion
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.traininganalyst.databinding.FragmentFirstBinding
+import com.example.mycompanion.databinding.FragmentFirstBinding
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
