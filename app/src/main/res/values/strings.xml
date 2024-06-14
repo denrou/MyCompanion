@@ -17,4 +17,12 @@
     <string name="trail">Trail</string>
     <string name="running">Running</string>
     <string name="biking">Biking</string>
+
+    <string name="goal_question">What is your goal for today?</string>
+    <string name="enter_goal">Enter your goal</string>
+    <string name="start_training">Start Training</string>
+    <string name="initial_timer">00:00:00</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="stop">Stop</string>
 </resources>

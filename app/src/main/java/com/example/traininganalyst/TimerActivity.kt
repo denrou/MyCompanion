@@ -2,17 +2,19 @@ package com.example.traininganalyst
 
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import java.util.Locale
 
 class TimerActivity : AppCompatActivity() {
 
     private lateinit var timerTextView: TextView
     private lateinit var pauseButton: Button
     private lateinit var stopButton: Button
-    private var handler = Handler()
+    private var handler = Handler(Looper.getMainLooper())
     private var startTime = 0L
     private var timeInSeconds = 0L
     private var running = false
@@ -25,7 +27,7 @@ class TimerActivity : AppCompatActivity() {
                 val hours = timeInSeconds / 3600
                 val minutes = (timeInSeconds % 3600) / 60
                 val seconds = timeInSeconds % 60
-                timerTextView.text = String.format("%02d:%02d:%02d", hours, minutes, seconds)
+                timerTextView.text = String.format(Locale.getDefault(), "%02d:%02d:%02d", hours, minutes, seconds)
                 handler.postDelayed(this, 1000)
             }
         }
@@ -48,9 +50,9 @@ class TimerActivity : AppCompatActivity() {
             if (running) {
                 startTime = System.currentTimeMillis() - timeInSeconds * 1000
                 handler.post(runnable)
-                pauseButton.text = "Pause"
+                pauseButton.text = getString(R.string.pause)
             } else {
-                pauseButton.text = "Resume"
+                pauseButton.text = getString(R.string.resume)
             }
         }
 

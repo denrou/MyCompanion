@@ -12,7 +12,7 @@
         android:id="@+id/timerTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="00:00:00"
+        android:text="@string/initial_timer"
         android:textSize="48sp"
         android:layout_marginBottom="32dp" />
 
@@ -25,13 +25,15 @@
             android:id="@+id/pauseButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pause"
-            android:layout_marginEnd="16dp" />
+            android:text="@string/pause"
+            android:layout_marginEnd="16dp"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/stopButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Stop" />
+            android:text="@string/stop"
+            style="?android:attr/buttonBarButtonStyle" />
     </LinearLayout>
 </LinearLayout>
