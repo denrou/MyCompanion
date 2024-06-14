@@ -19,84 +19,10 @@
             android:textSize="24sp"
             android:layout_marginBottom="16dp"/>
 
-        <GridLayout
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:columnCount="2"
-            android:rowCount="4"
-            android:layout_gravity="center">
-
-            <!-- Repeat this block for each sport -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_margin="8dp"
-                android:onClick="onSportClick"
-                android:tag="Badminton">
-
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:src="@drawable/icon_badminton"
-                    android:contentDescription="@string/badminton" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/badminton"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <!-- Basketball -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_margin="8dp"
-                android:onClick="onSportClick"
-                android:tag="Basketball">
-
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:src="@drawable/icon_basketball"
-                    android:contentDescription="@string/basketball" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/basketball"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <!-- Climbing -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_margin="8dp"
-                android:onClick="onSportClick"
-                android:tag="Climbing">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/climbing"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <ImageView
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:layout_row="0"
-                android:layout_column="3"
-                android:contentDescription="@string/climbing"
-                android:src="@drawable/icon_climbing" />
-
-        </GridLayout>
+            android:layout_gravity="center" />
     </LinearLayout>
 </ScrollView>

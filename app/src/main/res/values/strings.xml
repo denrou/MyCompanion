@@ -10,13 +10,23 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="select_sport">Select a Sport</string>
+    
+    <string name="emoji">Emoji Icon</string>
+
     <string name="badminton">Badminton</string>
+    <string name="badminton_emoji">🏸</string>
     <string name="basketball">Basketball</string>
+    <string name="basketball_emoji">🏀</string>
     <string name="climbing">Climbing</string>
+    <string name="climbing_emoji">🧗</string>
     <string name="hockey">Hockey</string>
+    <string name="hockey_emoji">🏒</string>
     <string name="trail">Trail</string>
+    <string name="trail_emoji">⛰️</string>
     <string name="running">Running</string>
+    <string name="running_emoji">🏃</string>
     <string name="biking">Biking</string>
+    <string name="biking_emoji">🚴</string>
 
     <string name="goal_question">What is your goal for today?</string>
     <string name="enter_goal">Enter your goal</string>
@@ -25,4 +35,5 @@
     <string name="pause">Pause</string>
     <string name="resume">Resume</string>
     <string name="stop">Stop</string>
+
 </resources>
