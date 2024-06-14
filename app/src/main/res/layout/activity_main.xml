@@ -82,18 +82,20 @@
                 android:onClick="onSportClick"
                 android:tag="Climbing">
 
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:src="@drawable/icon_climbing"
-                    android:contentDescription="@string/climbing" />
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/climbing"
                     android:textSize="16sp" />
             </LinearLayout>
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:contentDescription="@string/climbing"
+                android:src="@drawable/icon_climbing" />
 
         </GridLayout>
     </LinearLayout>

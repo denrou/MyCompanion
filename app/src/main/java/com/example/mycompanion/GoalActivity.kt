@@ -1,4 +1,4 @@
-package com.example.traininganalyst
+package com.example.mycompanion
 
 import android.content.Intent
 import android.os.Bundle
