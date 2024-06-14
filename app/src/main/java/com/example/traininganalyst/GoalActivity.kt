@@ -1,5 +1,6 @@
 package com.example.traininganalyst
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -21,8 +22,10 @@ class GoalActivity : AppCompatActivity() {
         startTrainingButton.setOnClickListener {
             val goal = goalInput.text.toString()
             Log.d("GoalActivity", "Goal for today: $goal")
-            // Save the goal in a variable for future use if needed
-            // val userGoal = goal
+
+            // Start TimerActivity
+            val intent = Intent(this, TimerActivity::class.java)
+            startActivity(intent)
         }
     }
 }
