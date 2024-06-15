@@ -35,5 +35,6 @@
     <string name="pause">Pause</string>
     <string name="resume">Resume</string>
     <string name="stop">Stop</string>
+    <string name="initial_steps">Steps: 0</string>
 
 </resources>

@@ -16,6 +16,14 @@
         android:textSize="48sp"
         android:layout_marginBottom="32dp" />
 
+    <TextView
+        android:id="@+id/stepsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/initial_steps"
+        android:textSize="24sp"
+        android:layout_marginBottom="32dp" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
