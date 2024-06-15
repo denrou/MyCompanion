@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/colorBackground">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,17 +13,37 @@
         android:padding="16dp"
         android:gravity="center">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/select_sport"
-            android:textSize="24sp"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_sport"
+                android:textSize="24sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="16dp"/>
+
+            <View
+                android:id="@+id/gps_status_circle"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/yellow_circle"
+                android:visibility="gone"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"/>
     </LinearLayout>
 </ScrollView>

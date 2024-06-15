@@ -1,0 +1,12 @@
+<resources>
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryDark">#E64A19</color>
+    <color name="colorAccent">#4CAF50</color>
+    <color name="colorBackground">#121212</color>
+    <color name="colorTextPrimary">#FFFFFF</color>
+    <color name="colorTextSecondary">#B0B0B0</color>
+    <color name="colorGreen">#4CAF50</color>
+    <color name="colorYellow">#FFEB3B</color>
+    <color name="buttonBackground">#FF5722</color> <!-- For button background -->
+    <color name="buttonTextColor">#FFFFFF</color>  <!-- For button text -->
+</resources>

@@ -1,5 +1,6 @@
 package com.example.mycompanion
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -58,7 +59,23 @@ class TimerActivity : AppCompatActivity() {
 
         stopButton.setOnClickListener {
             Log.d("TimerActivity", "Training stopped at ${timerTextView.text}")
-            finishAffinity()
+            running = false
+            handler.removeCallbacks(runnable)
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish() // Optional: Call this if you want to remove TimerActivity from the back stack
+        }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        handler.removeCallbacks(runnable)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if (running) {
+            handler.post(runnable)
         }
     }
 }
